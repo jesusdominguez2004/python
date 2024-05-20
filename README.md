@@ -6,7 +6,7 @@ Administrado por Python Software Foundation, posee una licencia de código abier
 
 *--- Wikipedia*
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="python" width="60" height="60"/> <img src="https://vetores.org/d/w3schools.svg" alt="w3schools" height="60"/> <img src="https://code.visualstudio.com/assets/images/code-stable.png" alt="vscode" width="60" height="60"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="python" width="70" height="70"/> <img src="https://vetores.org/d/w3schools.svg" alt="w3schools" height="70"/> <img src="https://code.visualstudio.com/assets/images/code-stable.png" alt="vscode" width="70" height="70"/>
 
 ---
 

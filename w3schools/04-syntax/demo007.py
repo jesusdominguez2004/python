@@ -1,4 +1,4 @@
-# W3Schools, Python, Syntax
+# W3Schools, Python Syntax
 x = 5
 y = "Hello, World!"
 

@@ -1,2 +1,2 @@
-# W3Schools, Python, Home
+# W3Schools, Python Home
 print("Hello, World!")

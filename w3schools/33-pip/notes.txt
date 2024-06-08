@@ -1,0 +1,4 @@
+pip --version
+pip list
+pip install module_name
+pip uninstall module_name

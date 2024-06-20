@@ -10,6 +10,11 @@ X = df[['Weight', 'Volume']]
 y = df['CO2']
 
 # for each row: z = (x - u) / s
+# z = (x - u) / s
+# z = new value
+# x = original value
+# u = mean
+# s = standard deviation
 scaledX = scale.fit_transform(X)
 
 regr = linear_model.LinearRegression()

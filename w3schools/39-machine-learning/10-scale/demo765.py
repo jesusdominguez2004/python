@@ -8,6 +8,10 @@ df = pandas.read_csv("data.csv")
 
 X = df[['Weight', 'Volume']]
 
-# z = (x - u) / s
+# for each row: z = (x - u) / s
+# z = new value
+# x = original value
+# u = mean
+# s = standard deviation
 scaledX = scale.fit_transform(X)
 print(scaledX)

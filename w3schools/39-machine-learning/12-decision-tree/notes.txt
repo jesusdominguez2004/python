@@ -1,0 +1,8 @@
+- To make a decision tree, all data has to be numerical.
+- Pandas has a map() method that takes a dictionary with information on how to convert the values.
+
+- The "feature columns" are the columns that we try to predict from, 
+- and the "target column" is the column with the values we try to predict.
+
+- You will see that the Decision Tree gives you different results if you run it enough times, even if you feed it with the same data.
+- That is because the Decision Tree does not give us a 100% certain answer. It is based on the probability of an outcome, and the answer will vary.

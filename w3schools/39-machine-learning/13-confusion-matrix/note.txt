@@ -1,0 +1,27 @@
+The Confusion Matrix created has four different quadrants:
+- True Negative (Top-Left Quadrant)
+- False Positive (Top-Right Quadrant)
+- False Negative (Bottom-Left Quadrant)
+- True Positive (Bottom-Right Quadrant)
+
+The different measures include: 
+- Accuracy
+- Precision
+- Sensitivity (Recall)
+- Specificity
+- F-score
+
+Accuracy:
+- (True Positive + True Negative) / Total Predictions
+
+Precision:
+- True Positive / (True Positive + False Positive)
+
+Sensitivity (Recall):
+- True Positive / (True Positive + False Negative)
+
+Specificity:
+- True Negative / (True Negative + False Positive)
+
+F-score:
+- 2 * ((Precision * Sensitivity) / (Precision + Sensitivity))

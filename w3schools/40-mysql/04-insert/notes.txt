@@ -1,0 +1,4 @@
+- Important! 
+- Notice the statement: mydb.commit(). 
+- It is required to make the changes, 
+- otherwise no changes are made to the table.

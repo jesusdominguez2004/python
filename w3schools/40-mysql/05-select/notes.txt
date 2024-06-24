@@ -1,0 +1,7 @@
+- Note: 
+- We use the fetchall() method, 
+- which fetches all rows from the last executed statement.
+
+- If you are only interested in one row, 
+- you can use the fetchone() method.
+- The fetchone() method will return the first row of the result

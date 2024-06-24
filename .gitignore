@@ -7,3 +7,7 @@
 /pruebas
 /SQL
 /data.csv
+
+# For Python MySQL Tutorial
+mysql_credentials.py
+__pycache__

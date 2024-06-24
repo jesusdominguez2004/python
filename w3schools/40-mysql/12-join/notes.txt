@@ -1,0 +1,9 @@
+Note: 
+- You can use JOIN instead of INNER JOIN
+- They will both give you the same result
+
+Types of Join:
+- JOIN (Only matches)
+- INNER JOIN (Only matches)
+- LEFT JOIN (All rows from 1st table and None)
+- RIGHT JOIN (None and all rows from 2nd table)

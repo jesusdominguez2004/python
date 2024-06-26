@@ -14,3 +14,4 @@ __pycache__
 
 # For Python MongoDB Tutorial
 playground-1.mongodb.js
+mongodb_credentials.py

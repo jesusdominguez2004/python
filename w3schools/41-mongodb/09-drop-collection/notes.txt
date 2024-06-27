@@ -1,0 +1,49 @@
+Important: 
+- In MongoDB, a database is not created until it gets content!
+- MongoDB waits until you have created a collection (table), 
+- with at least one document (record) 
+- before it actually creates the database (and collection).
+
+Remember: 
+- In MongoDB, a database is not created until it gets content, 
+- so if this is your first time creating a database, you should complete the next two chapters 
+- (create collection and create document) before you check if the database exists!
+
+How do I connect to my MongoDB M0 (cluster):
+- Get the connection string
+- Use "MongoDB for VS Code." 
+- Establish the connection to the Cluster using the connection string
+- Import MongoDB credentials with a secret module
+- Connect to the cluster from the list of IP Addresses from Network Access
+
+Insert:
+- A document in MongoDB is the same as a record in SQL databases.
+- If you do not specify an _id field, then MongoDB will add one for you and assign a unique id for each document.
+- The insert_many() method returns a InsertManyResult object, which has a property, inserted_ids, that holds the ids of the inserted documents.
+- Remember that the values (_id) has to be unique. Two documents cannot have the same _id.
+
+Find:
+- In MongoDB we use the find() and find_one() methods to find data in a collection.
+- Just like the SELECT statement is used to find data in a table in a MySQL database.
+
+Query:
+- When finding documents in a collection, you can filter the result by using a query object.
+- To make advanced queries you can use modifiers as values in the query object.
+- Regular expressions can only be used to query strings.
+
+Sort:
+- Use the sort() method to sort the result in ascending or descending order.
+- sort("name", 1)  -> ascending
+- sort("name", -1) -> descending
+
+Delete:
+- To delete one document, we use the delete_one() method.
+- The first parameter of the delete_one() method is a query object defining which document to delete.
+- If the query finds more than one document, only the first occurrence is deleted.
+- To delete more than one document, use the delete_many() method.
+- The first parameter of the delete_many() method is a query object defining which documents to delete.
+- To delete all documents in a collection, pass an empty query object to the delete_many() method
+
+Drop Collection:
+- You can delete a table, or collection as it is called in MongoDB, by using the drop() method.
+- The drop() method returns true if the collection was dropped successfully, and false if the collection does not exist.

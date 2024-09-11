@@ -1,4 +1,4 @@
-# Python MCM 🌿📚
+# Python MCM 1.0 🌿📚
 
 Versión 1.0:
 - Leer dos números del usuario
@@ -14,4 +14,4 @@ Versión 1.0:
 > Versión actual 1.0
 
 > [!IMPORTANT]
-> Proyecto en contrucción...
+> Proyecto en construcción...

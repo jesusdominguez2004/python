@@ -5,3 +5,8 @@ POR HACER:
 - Opción de exportación a Excel
 - Crear una interfaz de usuario gráfica (GUI)
 - Crear una consola personalidada en una GUI
+
+VALIDACIONES:
+- Tipos de datos ingresados correctos
+- No divisiones entre cero
+- Número de múltiplos generados

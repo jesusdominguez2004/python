@@ -5,6 +5,8 @@ POR HACER:
 - Opción de exportación a Excel
 - Crear una interfaz de usuario gráfica (GUI)
 - Crear una consola personalidada en una GUI
+- Licencia MIT
+- Ejecutable .EXE
 
 VALIDACIONES:
 - Tipos de datos ingresados correctos

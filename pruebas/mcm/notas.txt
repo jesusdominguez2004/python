@@ -1,0 +1,7 @@
+POR HACER:
+- Programación Orientada a Objetos (POO)
+- Implementar forma factores primos (CONSOLA)
+- Opciones de exportación (JSO, .CSV, .TXT)
+- Opción de exportación a Excel
+- Crear una interfaz de usuario gráfica (GUI)
+- Crear una consola personalidada en una GUI

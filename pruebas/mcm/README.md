@@ -35,6 +35,8 @@
 > [!NOTE]
 > Versión actual **1.3**.
 
+![Green Console Code](https://i0.wp.com/24.media.tumblr.com/tumblr_mdn5s0Q7Ht1r66g9jo1_500.gif "Creative Commons License")
+
 ---
 
 > [!IMPORTANT]

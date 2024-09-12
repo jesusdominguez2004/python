@@ -1,5 +1,8 @@
 # Python MCM 1.3 🌿📚
 
+> [!TIP]
+> Versiones del proyecto y sus características nuevas.
+
 Versión 1.0:
 - Leer dos números del usuario
 - Leer cantidad de múltiplos por consultar
@@ -30,7 +33,7 @@ Versión 1.3:
 --- 
 
 > [!NOTE]
-> Versión actual 1.3
+> Versión actual 1.3.
 
 ---
 

@@ -37,7 +37,6 @@ Versión 1.3:
 > [!IMPORTANT]
 > Proyecto en construcción...
 
-Por hacer:
 - Implementar forma factores primos (CONSOLA)
 - Opciones de exportación (JSO, .CSV, .TXT)
 - Opción de exportación a Excel

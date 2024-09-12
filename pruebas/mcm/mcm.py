@@ -1,49 +1,124 @@
 # Python MCM (Mínimo Común Múltiplo)
 
-# 1. Leer números usuario
-numero01 = input("Ingrese un primer número: ")
-numero02 = input("Ingrese un segundo número: ")
-cantidad_multiplos = input("Ingrese cantidad de múltiplos de consulta: ")
+# Clase MCM
+class MCM:
+    # Constructor
+    def __init__(self) -> None:
+        self.__cantidad_numeros = 0
+        self.__numeros_usuario = []
+        self.__cantidad_multiplos = 0
+        self.__matriz_multiplos = []
+        self.__multiplos_comunes = []
+        self.__mcm = 0
 
-if numero01.isdigit() and numero02.isdigit() and cantidad_multiplos.isdigit():
-    numero01 = int(numero01)
-    numero02 = int(numero02)
-    cantidad_multiplos = int(cantidad_multiplos)
+    # Setters and getters
+    def set_cantidad_numeros(self, x: int) -> None:
+        self.__cantidad_numeros = x
 
-    # 2. Obtener multiplos del usuario
-    numero01_multiplos = []
-    numero02_multiplos = []
+    def get_cantidad_numeros(self) -> int:
+        return self.__cantidad_numeros
 
-    for x in range(cantidad_multiplos):
-        numero01_multiplo = numero01 * (x + 1)
-        numero02_multiplo = numero02 * (x + 1)
-        numero01_multiplos.append(numero01_multiplo)
-        numero02_multiplos.append(numero02_multiplo)
+    def set_numeros_usuario(self, x: list) -> None:
+        self.__numeros_usuario = x
 
-    # 3. Encontrar multiplos comunes
-    multiplos_comunes = []
-    for multiplo in numero01_multiplos:
-        if multiplo in numero02_multiplos:
-            multiplos_comunes.append(multiplo)
+    def get_numeros_usuario(self) -> list:
+        return self.__numeros_usuario
+    
+    def set_cantidad_multiplos(self, x: int) -> None:
+        self.__cantidad_multiplos = x
 
-    # 4. Calcular el menor múltiplo común
-    if len(multiplos_comunes) > 0:
-        mcm = min(multiplos_comunes)
-    else:
-        mcm = None
-        multiplos_comunes = None
-else:
-    numero01 = None
-    numero02 = None
-    cantidad_multiplos = None
-    numero01_multiplos = None
-    numero02_multiplos = None
-    multiplos_comunes = None
-    mcm = None
+    def get_cantidad_multiplos(self) -> int:
+        return self.__cantidad_multiplos
+    
+    def set_matriz_multiplos(self, x: list) -> None:
+        self.__matriz_multiplos = x
 
-# 5. Mostrar resultados en consola
-print(f"\nCantidad múltiplos: {cantidad_multiplos}")
-print(f"Multiplos de {numero01}: {numero01_multiplos}")
-print(f"Multiplos de {numero02}: {numero02_multiplos}")
-print(f"Multiplos comunes: {multiplos_comunes}")
-print(f"MCM: {mcm}")
+    def get_matriz_multiplos(self) -> list:
+        return self.__matriz_multiplos
+
+    def set_multiplos_comunes(self, x: list) -> None:
+        self.__multiplos_comunes = x
+
+    def get_multiplos_comunes(self) -> list:
+        return self.__multiplos_comunes
+    
+    def set_mcm(self, x: int) -> None:
+        self.__mcm = x
+
+    def get_mcm(self) -> int:
+        return self.__mcm
+    
+    # 1. Ingresar datos
+    def ingresar_datos(self):
+        cantidad_numeros = int(input("Ingrese cantidad de números: "))
+        self.set_cantidad_numeros(cantidad_numeros)
+
+        cantidad_multiplos = int(input("Ingrese cantidad de multiplos: "))
+        self.set_cantidad_multiplos(cantidad_multiplos)
+
+        numeros_usuarios = []
+        for x in range(cantidad_numeros):
+            number = int(input(f"Ingrese un número entero (#{x+1}): "))
+            numeros_usuarios.append(number)
+        self.set_numeros_usuario(numeros_usuarios)
+
+        return True
+
+    # 2. Calcular múltiplos
+    def calcular_multiplos(self):
+        matriz_multiplos = []
+        i = 0
+        while i < self.get_cantidad_numeros():
+            multiplos = []
+            j = 0
+            while j < self.get_cantidad_multiplos():
+                multiplo = self.get_numeros_usuario()[i] * (j + 1)
+                multiplos.append(multiplo)
+                j = j + 1
+            matriz_multiplos.append(multiplos)
+            i = i + 1
+
+        self.set_matriz_multiplos(matriz_multiplos)
+
+    # 3. Encontrar múltiplos comunes
+    def encontar_multiplos_comunes(self):
+        multiplos_comunes = []
+        fila_matriz_primera = self.get_matriz_multiplos()[0]
+        i = 0
+        while i < len(fila_matriz_primera):
+            j = 0
+            while j < len(self.get_matriz_multiplos()):
+                if fila_matriz_primera[i] in self.get_matriz_multiplos()[j]:
+                    multiplos_comunes.append(fila_matriz_primera[i])
+                j = j + 1
+            i = i + 1
+        
+        set_multiplos = set(multiplos_comunes)
+        for x in set_multiplos:
+            if multiplos_comunes.count(x) == self.get_cantidad_numeros():
+                self.get_multiplos_comunes().append(x)
+
+    # 4. Encontrar el MCM
+    def encontrar_mcm(self):
+        mcm = min(self.get_multiplos_comunes())
+        self.set_mcm(mcm)
+
+    # 5. Imprimir datos (consola)
+    def imprimir_datos(self):
+        print(f"Cantidad números usuario: {self.get_cantidad_numeros()}")
+        print(f"Lista números usuario: {self.get_numeros_usuario()}")
+        print(f"Matriz múltiplos usuario: {self.get_matriz_multiplos()}")
+        print(f"Lista múltiplos comunes: {self.get_multiplos_comunes()}")
+        print(f"MCM: {self.get_mcm()}")
+
+# Función principal
+def main():
+    consulta01 = MCM()
+    consulta01.ingresar_datos()
+    consulta01.calcular_multiplos()
+    consulta01.encontar_multiplos_comunes()
+    consulta01.encontrar_mcm()
+    consulta01.imprimir_datos()
+
+# Llamar función principal
+main()

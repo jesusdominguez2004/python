@@ -9,14 +9,22 @@ Versión 1.0:
 - Encontrar MCM (Número menor entre los múltiplos comunes)
 
 Versión 1.1:
-- Validar si lista múltiplos comunes no está vacía
+- Validar que lista múltiplos comunes no esté vacía
 - Validar que números de usuario sean dígitos
 - Validar que cantidad múltiplos por consular sea un dígito
+
+Versión 1.2:
+- Programación Orientada a Objetos (POO)
+- Lectura de números usuario dinámica
+- Leer cantidad de múltiplos por consular
+- Contrucción de matriz de mútiplos usuario
+- Encontrar múltiplos comunes en la matriz de múltiplos
+- Encontrar MCM (Número menor entre los múltiplos comunes)
 
 --- 
 
 > [!NOTE]
-> Versión actual 1.0
+> Versión actual 1.2
 
 > [!IMPORTANT]
 > Proyecto en construcción...

@@ -1,5 +1,4 @@
 POR HACER:
-- Programación Orientada a Objetos (POO)
 - Implementar forma factores primos (CONSOLA)
 - Opciones de exportación (JSO, .CSV, .TXT)
 - Opción de exportación a Excel
@@ -12,3 +11,5 @@ VALIDACIONES:
 - Tipos de datos ingresados correctos
 - No divisiones entre cero
 - Número de múltiplos generados
+- Procesar listas o matrices vacías
+- Procesar variables o datos vacíos

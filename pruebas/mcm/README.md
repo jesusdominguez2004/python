@@ -1,4 +1,4 @@
-# Python MCM 1.0 🌿📚
+# Python MCM 1.2 🌿📚
 
 Versión 1.0:
 - Leer dos números del usuario

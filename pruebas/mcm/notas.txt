@@ -6,6 +6,7 @@ POR HACER:
 - Crear una consola personalidada en una GUI
 - Licencia MIT (En un repositorio)
 - Ejecutable .EXE
+- Algoritmos de búsquedas dato común en filas matriz mejorado
 
 VALIDACIONES:
 - Tipos de datos ingresados correctos

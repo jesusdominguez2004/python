@@ -50,16 +50,25 @@ class MCM:
     
     # 1. Ingresar datos
     def ingresar_datos(self):
-        cantidad_numeros = int(input("Ingrese cantidad de números: "))
-        self.set_cantidad_numeros(cantidad_numeros)
+        cantidad_numeros = input("Ingrese cantidad de números: ")
+        while not cantidad_numeros.isdigit():
+            print(f"'{cantidad_numeros}' no es un formato válido...")
+            cantidad_numeros = input("Ingrese cantidad de números: ")
+        self.set_cantidad_numeros(int(cantidad_numeros))
 
-        cantidad_multiplos = int(input("Ingrese cantidad de multiplos: "))
-        self.set_cantidad_multiplos(cantidad_multiplos)
+        cantidad_multiplos = input("Ingrese cantidad de multiplos: ")
+        while not cantidad_multiplos.isdigit():
+            print(f"'{cantidad_multiplos}' no es un formato válido...")
+            cantidad_multiplos = input("Ingrese cantidad de múltiplos: ")
+        self.set_cantidad_multiplos(int(cantidad_multiplos))
 
         numeros_usuarios = []
-        for x in range(cantidad_numeros):
-            number = int(input(f"Ingrese un número entero (#{x+1}): "))
-            numeros_usuarios.append(number)
+        for x in range(int(cantidad_numeros)):
+            number = input(f"Ingrese un número entero (#{x+1}): ")
+            while not number.isdigit():
+                print(f"'{number}' no es un formato válido...")
+                number = input(f"Ingrese un número entero (#{x+1}): ")
+            numeros_usuarios.append(int(number))
         self.set_numeros_usuario(numeros_usuarios)
 
         return True
@@ -100,8 +109,11 @@ class MCM:
 
     # 4. Encontrar el MCM
     def encontrar_mcm(self):
-        mcm = min(self.get_multiplos_comunes())
-        self.set_mcm(mcm)
+        if len(self.get_multiplos_comunes()) > 0:
+            mcm = min(self.get_multiplos_comunes())
+            self.set_mcm(mcm)
+        else:
+            self.set_mcm(0)
 
     # 5. Imprimir datos (consola)
     def imprimir_datos(self):

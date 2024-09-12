@@ -32,5 +32,22 @@ Versión 1.3:
 > [!NOTE]
 > Versión actual 1.3
 
+---
+
 > [!IMPORTANT]
 > Proyecto en construcción...
+
+Por hacer:
+- Implementar forma factores primos (CONSOLA)
+- Opciones de exportación (JSO, .CSV, .TXT)
+- Opción de exportación a Excel
+- Crear una interfaz de usuario gráfica (GUI)
+- Crear una consola personalidada en una GUI
+- Licencia MIT (En un repositorio)
+- Ejecutable .EXE
+- Algoritmos de búsquedas dato común en filas matriz mejorado
+- No divisiones entre cero
+- Número de múltiplos generados
+- Procesar listas vacías
+- Procesar matrices vacías
+- Procesar variables o datos vacíos

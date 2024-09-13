@@ -18,3 +18,6 @@ mongodb_credentials.py
 
 # For Python MCM
 /pruebas/mcm/mcm_pruebas.py
+
+# For projecteuler.net
+/project-euler/
